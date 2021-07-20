@@ -1,3 +1,4 @@
+// text-align and similar declarations are not working as expected
 import Head from 'next/head'
 
 export default function Home() {
@@ -16,6 +17,10 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+
+        <p className="expClass"><b>Hello!</b>  Here is another paragraph!</p>
+
+        <p className="expClass">Nextjs paired with <code><a href="https://gitpod.io">GitPod</a></code> is a real dream come true!</p>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
@@ -66,7 +71,7 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          align-items: left;
         }
 
         main {
@@ -127,6 +132,13 @@ export default function Home() {
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
+        }
+
+        .expClass {
+          line-height: 1.2;
+          font-size: 1.1rem;
+          justify-content: left; //This is not working
+          text-align: left;
         }
 
         code {

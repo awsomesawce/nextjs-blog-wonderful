@@ -1,0 +1,20 @@
+#!/usr/bin/zsh -f
+# zsh init for GitPod
+# NOTE: if invoked from GitPod's Bash, zsh's prompt becomes weird and requires
+# PS1 variable to be set:
+
+export PS1="$PWD/ > "
+
+# zsh shell options
+# Copied from local zsh env
+# INPROGRESS
+
+setopt histignoredups
+setopt extendedglob
+setopt extendedhistory
+#setopt globdots
+setopt pushdminus
+setopt promptvars
+setopt autopushd
+setopt pushdignoredups
+setopt completeinword

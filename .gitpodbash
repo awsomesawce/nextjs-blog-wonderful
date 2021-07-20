@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# GitPod Bash Init
+
+# Common aliases
+alias ls='ls --color=auto'
+alias ll='ls -lhF'
+alias la='ls -alhF'
+alias l='ls -lhF'
